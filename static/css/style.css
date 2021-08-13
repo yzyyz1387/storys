@@ -18,6 +18,10 @@ a{
     text-decoration: none;
     color: #e67e22 ;
 }
+
+a:hover{
+    text-decoration: underline;
+}
 .top{
     position: relative;
     width: 100%;
@@ -51,6 +55,20 @@ a{
     font-size: 2em;
     border-bottom: 1px solid #fff;
     
+}
+.github{
+    position: absolute;
+    bottom: 0px;
+    line-height: 70px;
+    top: 10px;
+    right: 150px;
+    color: #000;
+    
+}
+
+.github:hover{
+    color: #3898fc;
+    transition: 0.3s;
 }
 
 .aboutbox :hover{
@@ -255,7 +273,23 @@ footer{
         0 0 10px  #e67e22,
         0 0 0;
     }
-
+    .github{
+        position: absolute;
+        bottom: 0px;
+        line-height: 30px;
+        top: 0px;
+        right: 50px;
+        color: #3898fc;
+        font-size: 1em;
+        
+    }
+    .github:hover{
+        color: #000;
+        transition: 0.3s;
+    }
+    .fa-3x{
+        font-size: 1em !important; 
+    }
     .thanks{
         display: block;
         position: relative;
