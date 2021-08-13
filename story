@@ -66,7 +66,7 @@ story!
 【城南】
 【https://music.163.com/#/user/event?id=259825231】
 【网易云音乐】
-【<div style="text-align:center"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=468176711&auto=1&height=66"></iframe></div>
+【<div style="text-align:center;text-indent:0"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=468176711&auto=1&height=66"></iframe></div>
 以下来自：<a href="https://music.163.com/#/song?id=468176711" target="_blank">https://music.163.com/#/song?id=468176711</a>
 <date>2017-03-26</date> 君安在，谢谢十二亩地，谢谢所有关心我的人，谢谢你们！早上因为治疗现在才看见，我会坚持的！
 2017-03-26 谢谢私信给我朋友们，真心谢谢你们！我好坚持加油
