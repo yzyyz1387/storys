@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>随事</title>
+
+<body>
+    
+    <!-- 内容 -->
+    <div class="container">
+        <div class="title">
+            <h3>404</h3>
+            <h3>  (。﹏。*) 你访问的页面找不到惹</h3>
+            <a href="/">返回首页</a>
+            
+
+        </div>
+
+
+
+    <footer>
+        <div class="copyright">
+            <span id="timeDate" style="text-align: center">载入天数...</span><span id="times">载入时分秒...</span> | Copyright ©
+            2021 <a href="https://yzyyz.top" target="_blank"> yzyyz.top </a>
+        </div>
+    </footer>
+</div>
+
+
+
+     <!-- 运行时间 -->   
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt = new Date("08/11/2021 12:46:38");
+            now.setTime(now.getTime() + 250);
+            days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+            seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+            document.getElementById("timeDate").innerHTML = "已运行 " + dnum + " 天 ";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+        setInterval("createtime()", 250);
+    </script>
+</body>
+
+</html>

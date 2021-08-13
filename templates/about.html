@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>关于|随机故事</title>
+
+<body>
+    <div class="top">
+        <p class="webtitle">随事</p>
+        <!-- <a href="/about" class="aboutbox">
+            <p class="about">关于</p>
+        </a> -->
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+        <div class="title">
+            <h3>关于</h3>
+            <p class="writer">幼稚园园长</p>
+        </div>
+        <div class="content">
+            <br>
+            <div class="abouttext">
+                <ul>
+                    <li>
+                        一个简约的阅读网站，由<a href="https://yzyyz.top">幼稚园园长</a>于<code>2021-08-11 12:46:38</code>
+                        创建。所用图片来自<code>   <a href="https://cn.bing.com/">  Bing每日图片</a></code>，故事内容所用字体为<code><a href="http://www.tsanger.cn/" target="_blank">苍耳今楷</a></code>
+                    </li>
+                    <li>创建设想本站故事多与感情相关，也会收录其他内容</li>
+                    <li>已有 {{ length }} 则故事被收录 </li>
+                    <li>若所用内容涉及侵权，请联系我们删除内容</;>
+                    <li>
+                        用户利用简短的琐碎时间即可完成一次阅读，珍惜美好时光，改善阅读习惯
+                    </li>
+                    <li>
+                        联系我们： <a href="mailto:youzyyz1384@qq.com">youzyyz1384@qq.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="derive">来源：幼稚园园长 <a href="/about">查看来源页</a> </p>
+        <!-- 按钮 -->
+        <div class="buttonbox">
+            <a href="/">
+                <div class="button">
+                    <p class="more"> 返回主页 </p>
+                </div>
+            </a>
+            <a href="mailto:youzyyz1384@qq.com">
+                <div class="button">
+                    <p class="more"> 联系我们 </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- 内容结束 -->
+
+    <div class="thanks">
+        <h3>致谢名单</h3>
+        暂无
+
+    </div>
+
+
+    <div class="imgtips">
+        <p>
+            图片来自Bing每日图片
+        </p>
+    </div>
+    <!-- 底部栏，运行信息及版权申明 -->
+    <footer>
+        <div class="copyright">
+            <span id="timeDate" style="text-align: center">载入天数...</span><span id="times">载入时分秒...</span> | Copyright ©
+            2021 <a href="https://yzyyz.top" target="_blank"> yzyyz.top </a>
+        </div>
+    </footer>
+    <!-- 底部栏结束 -->
+
+
+    <!-- 运行时间 -->
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt = new Date("08/11/2021 12:46:38");
+            now.setTime(now.getTime() + 250);
+            days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+            seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+            document.getElementById("timeDate").innerHTML = "已运行 " + dnum + " 天 ";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+        setInterval("createtime()", 250);
+    </script>
+</body>
+
+</html>
