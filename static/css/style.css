@@ -22,6 +22,9 @@ a{
 a:hover{
     text-decoration: underline;
 }
+.buttona:hover{
+    text-decoration: none;
+}
 .top{
     position: relative;
     width: 100%;
@@ -141,7 +144,7 @@ code{
 .content{
   margin-top: 50px;
   text-indent: 2em;
-  font-size: 17pt;
+  font-size: 15pt;
   line-height: 1.5;
 }
 .buttonbox{
