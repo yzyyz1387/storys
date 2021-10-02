@@ -7,6 +7,7 @@ from wsgiref.simple_server import make_server
 
 
 app = Flask(__name__)
+bg=img.get_img()
 
 
 @app.errorhandler(404)
@@ -16,7 +17,6 @@ def page_not_found(e):
 
 @app.route('/')
 def story():
-    bg=img.get_img()
     text = open("story", "r", errors='ignore', encoding='utf-8')
     sotry = text.read()
     # print(sotry)
