@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html'), 404
+    return render_template('404.html',bg=bg), 404
 
 
 @app.route('/')
@@ -43,11 +43,11 @@ def about():
     findSum = re.compile('!story(.*?)story!', re.S)
     sum = re.findall(findSum, sotry)
     length=len(sum)
-    return render_template("about.html", length=length)
+    return render_template("about.html", length=length,bg=bg)
 
 
 
 if __name__ == '__main__':
     server = make_server('127.0.0.1', 5002, app)
     server.serve_forever()
-    app.run()
+    app.run(debuu=True)
