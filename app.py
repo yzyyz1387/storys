@@ -3,6 +3,8 @@ import re
 from random import *
 import time
 import img
+from wsgiref.simple_server import make_server
+
 
 app = Flask(__name__)
 
@@ -46,4 +48,6 @@ def about():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    server = make_server('127.0.0.1', 5002, app)
+    server.serve_forever()
+    app.run()
