@@ -9,7 +9,6 @@ def get_img():
     html = requests.get(url).text   # 获取这个网页源码
     text = json.loads(html)
     data = text['images'][0]['url']
-    print(text['images'][0]['url'])
     img = data1+ data
     return img
 
