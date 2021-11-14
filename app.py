@@ -14,15 +14,16 @@ bg=img.get_img()
 def page_not_found(e):
     return render_template('404.html',bg=bg), 404
 
-
+@app.route('/nolink')
+def no_page():
+    return render_template('nolink.html', bg=bg)
 @app.route('/')
 def story():
     text = open("story", "r", errors='ignore', encoding='utf-8')
     sotry = text.read()
-    # print(sotry)
     findSum = re.compile('!story(.*?)story!', re.S)
     sum = re.findall(findSum, sotry)
-    # print(sum)
+    # 故事总数
     findInfo = re.compile(r'【(.*?)】', re.S)
     # print(findInfo)
     # print(len(sum))
