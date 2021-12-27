@@ -17,6 +17,7 @@ def page_not_found(e):
 @app.route('/nolink')
 def no_page():
     return render_template('nolink.html', bg=bg)
+
 @app.route('/')
 def story():
     text = open("story", "r", errors='ignore', encoding='utf-8')
