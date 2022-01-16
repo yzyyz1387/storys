@@ -13,3 +13,5 @@ random story
 【内容】
 story!
 ```
+
+采用知识[署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可
