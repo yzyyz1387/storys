@@ -1,14 +1,14 @@
 /* @font-face {
     font-family: '03';
     src:url('https://cdn.jsdelivr.net/gh/yzyyz1387/blogimages/hhh/03.ttf');
-}
+}*/
 
 *{
     padding: 0;
     margin: 0;
-    font-family: '03';
+   /* font-family: '03';*/
   
-} */
+} 
 body{
     background-repeat: no-repeat; 
     background-attachment: fixed;
