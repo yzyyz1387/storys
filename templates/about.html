@@ -6,54 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
-    <script src="https://use.fontawesome.com/3758e71cd8.js"></script>
-    <script>
-        document.title = '需要设置的值';
-        document.getElementsByTagName("title")[0].innerText = ' {{ info[0] }} |随机故事';
-    </script>
-    <title>随事</title>
+    <title>关于|随机故事</title>
 
 <body style="background: url({{ bg }});background-repeat: no-repeat;background-attachment: fixed;">
-
     <div class="top">
         <p class="webtitle">随事</p>
-        <a href="/about" class="aboutbox">
+        <!-- <a href="/about" class="aboutbox">
             <p class="about">关于</p>
-        </a>
+        </a> -->
         <a href="https://github.com/yzyyz1387/storys/" class="github">
-            <i class=" fa fa-github fa-3x" aria-hidden="true"></i>
+            <i class=" fa fa-github fa-3x" aria-hidden="true"></i> 
         </a>
     </div>
     <!-- 内容 -->
     <div class="container">
         <div class="title">
-            <h3>{{ info[0] }}</h3>
-            <p class="writer">{{info[1]}}</p>
+            <h3>关于</h3>
+            <p class="writer">幼稚园园长</p>
         </div>
         <div class="content">
             <br>
-            <p>
-                {{ info[4] | safe }}
-            </p>
-
+            <div class="abouttext">
+                <ul>
+                    <li>
+                        一个简约的阅读网站，由<a href="https://yzyyz.top">幼稚园园长</a>于<code>2021-08-11 12:46:38</code>
+                        创建。所用图片来自<code>   <a href="https://cn.bing.com/">  Bing每日图片</a></code>，<del>故事内容所用字体为<code><a href="http://www.tsanger.cn/" target="_blank">苍耳今楷</a></del></code>
+                    </li>
+                    <li>创建设想本站故事多与感情相关，也会收录其他内容</li>
+                    <li>已有 {{ length }} 则故事被收录 </li>
+                    <li>若所用内容涉及侵权，请联系我们删除内容</;>
+                    <li>
+                        用户利用简短的琐碎时间即可完成一次阅读，珍惜美好时光，改善阅读习惯
+                    </li>
+                    <li>
+                        联系我们： <a href="mailto:youzyyz1384@qq.com">youzyyz1384@qq.com</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <p class="derive">来源：{{ info[3] }} <a target="_blank" href="{{ info[2] }}">点此查看来源页</a> </p>
+        <p class="derive">来源：幼稚园园长 <a href="/about">查看来源页</a> </p>
         <!-- 按钮 -->
         <div class="buttonbox">
             <a href="/" class="buttona">
                 <div class="button">
-                    <p class="more"> 再来一篇 </p>
+                    <p class="more"> 返回主页 </p>
+                </div>
+            </a>
+            <a href="mailto:youzyyz1384@qq.com" class="buttona">
+                <div class="button">
+                    <p class="more"> 联系我们 </p>
                 </div>
             </a>
         </div>
     </div>
     <!-- 内容结束 -->
-<div class="imgtips">
-    <p>
-        图片来自Bing每日图片
-    </p>
-</div>
 
+    <div class="thanks">
+        <h3>致谢名单</h3>
+        暂无
+
+    </div>
+
+
+    <div class="imgtips">
+        <p>
+            图片来自Bing每日图片
+        </p>
+    </div>
     <!-- 底部栏，运行信息及版权申明 -->
     <footer>
         <div class="copyright">
@@ -64,7 +83,7 @@
     <!-- 底部栏结束 -->
 
 
-     <!-- 运行时间 -->
+    <!-- 运行时间 -->
     <script>
         var now = new Date();
         function createtime() {
