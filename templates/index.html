@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
-    <script src="https://use.fontawesome.com/3758e71cd8.js"></script>
+{#    <script src="https://use.fontawesome.com/3758e71cd8.js"></script>#}
     <script>
         document.title = '需要设置的值';    
         document.getElementsByTagName("title")[0].innerText = ' {{ info[0] }} |随机故事';
     </script>
     <title>随事</title>
 
-<body>
+<body style="background: url({{ bg }});background-repeat: no-repeat;background-attachment: fixed;">
     <div class="top">
         <p class="webtitle">随事</p>
         <a href="/about" class="aboutbox">
             <p class="about">关于</p>
         </a>
-        <a href="https://github.com/yzyyz1387/storys/" class="github">
-            <i class=" fa fa-github fa-3x" aria-hidden="true"></i> 
+        <a href="https://github.com/yzyyz1387/storys/" >
+{#            <i class=" fa fa-github fa-3x" aria-hidden="true"></i> #}
+             <p class="github">Github</p>
         </a>
+
     </div>
     <!-- 内容 -->
     <div class="container">
