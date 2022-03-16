@@ -1,15 +1,16 @@
 /* @font-face {
     font-family: '03';
     src:url('https://cdn.jsdelivr.net/gh/yzyyz1387/blogimages/hhh/03.ttf');
-}*/
+} */
 
-*{
+ *{
     padding: 0;
     margin: 0;
-   /* font-family: '03';*/
-  
-} 
+    /*font-family: '03';*/
+
+}
 body{
+    /*background: url("https://area.sinaapp.com/bingImg/");*/
     background-repeat: no-repeat; 
     background-attachment: fixed;
 }
@@ -62,15 +63,22 @@ a:hover{
     position: absolute;
     bottom: 0px;
     line-height: 70px;
-    top: 10px;
-    right: 150px;
-    color: #000;
+    top: 0;
+    right: 80px;
+    color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    border-bottom: 1px solid #fff;
     
 }
 
 .github:hover{
-    color: #3898fc;
     transition: 0.3s;
+    text-shadow: 0 0 10px #fff,
+    0 0 0px  #fff,
+    0 0 5px  #fff,
+    0 0 10px  #fff,
+    0 0 0;
 }
 
 .aboutbox :hover{
