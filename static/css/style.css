@@ -49,14 +49,14 @@ a:hover{
 /* about */
 .about{
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     line-height: 70px;
     top: 0;
     right: 50px;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
-    border-bottom: 1px solid #fff;
+    
     
 }
 .github{
@@ -68,7 +68,7 @@ a:hover{
     color: #fff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5em;
-    border-bottom: 1px solid #fff;
+
     
 }
 
