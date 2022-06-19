@@ -214,9 +214,8 @@ footer{
     align-items: center;
 }
 .copyright{
-    position: absolute;
     width: 100%;
-    top: 15px;
+    margin-top: 15px;
    
 }
 @media (max-width:600px) {
