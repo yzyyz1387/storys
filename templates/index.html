@@ -58,8 +58,12 @@
     <!-- 底部栏，运行信息及版权申明 -->
     <footer>
         <div class="copyright">
-            <span id="timeDate" style="text-align: center">载入天数...</span><span id="times">载入时分秒...</span> | Copyright ©
-            2021 <a href="https://yzyyz.top" target="_blank"> yzyyz.top </a>
+            <span id="timeDate" style="text-align: center">载入天数...</span><span id="times">载入时分秒...</span> | <script type="text/javascript">
+            copyright=new Date();
+            update=copyright.getFullYear();
+            if (update!=='2021'){document.write("Copyright © 2021-"+ update + ' nwafu.ac.cn All rights reserved. ');}
+            else {document.write("Copyright © 2021"+ ' nwafu.ac.cn All rights reserved. ');}
+        </script>
         </div>
         <a target="_blank" rel="external nofollow noopener noreferrer" href="https://beian.miit.gov.cn/"><img class="icp-icon" src="https://cdn.jsdelivr.net/gh/yzyyz1387/blogimages/icp.png" alt="ICP"><span>陕ICP备2020016014号-1</span></a>
     </footer>
